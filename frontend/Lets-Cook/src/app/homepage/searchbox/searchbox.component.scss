@@ -11,13 +11,17 @@
         grid-area: input-area;
 
         padding-left: 10px;
-        border-radius: 3px 0 0 3px ;
+        // border-radius: 3px 0 0 3px ;
+
+        &:focus::placeholder{
+            color: transparent;
+        }
     }
     
     button{
         grid-area: button-area;
 
-        border-radius: 0 3px 3px 0 ;
+        border-radius: 0;
     }
 
     input, button{
@@ -28,6 +32,10 @@
         
         border: none;
         outline: none;
+    }
+
+    .search-icon{
+        color: rgb(158, 158, 158);
     }
 }
 
